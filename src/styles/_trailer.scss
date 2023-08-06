@@ -1,0 +1,25 @@
+.trailer {
+    padding: 5.6vw;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+
+    &__item {
+        width: 820px;
+        display: inline-block;
+
+        &__link {
+            width: 820px;
+        }
+
+        h1 {
+            color: rgb(255, 65, 65);
+            border-bottom: 2px solid rgb(255, 65, 65) ;
+            margin-bottom: 24px;
+            text-align: center;
+            
+        }
+    }
+
+
+}

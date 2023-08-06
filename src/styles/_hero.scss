@@ -1,0 +1,23 @@
+@use 'variaveis';
+
+.hero {
+    padding: 5.6vw;
+    min-height: 85vh;
+    text-align: center;
+    width: 100%;
+
+    img {
+        width: 100%;
+        height: 600px;
+    }
+    
+    &__content {
+        h1 {
+            color: #fff;
+            align-items: center;
+            text-align: center;
+            padding-bottom: 18px;
+            width: 100%;
+        }
+    }
+}
