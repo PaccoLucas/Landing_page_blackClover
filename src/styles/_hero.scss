@@ -1,17 +1,31 @@
 @use 'variaveis';
 
 .hero {
-    padding: 5.6vw;
+    padding: 64px 5.6vw;
     min-height: 85vh;
     text-align: center;
     width: 100%;
 
-    img {
-        width: 100%;
-        height: 600px;
+    @media (max-width: 768px) {
+        padding-top: calc(50vw + 25px);
+        margin-top: -200px;
+        min-height: 65vh;
+        img {
+            width: 320px;   
+        }
     }
-    
+
     &__content {
+
+        &__img {
+            height: 600px;
+            width: 100%;
+            margin-top: 16px;
+            @media (max-width:768px) {
+                height: 300px;
+            }
+        }
+
         h1 {
             color: #fff;
             align-items: center;

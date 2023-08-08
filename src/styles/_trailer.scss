@@ -4,12 +4,21 @@
     align-items: center;
     text-align: center;
 
+    @media (max-width:768px) {
+        display: flex;
+    }
+
     &__item {
         width: 820px;
         display: inline-block;
 
         &__link {
             width: 820px;
+
+            @media (max-width:768px) {
+                width: 320px;
+                height: 200px;
+            }
         }
 
         h1 {

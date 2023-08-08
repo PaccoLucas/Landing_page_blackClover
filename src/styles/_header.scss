@@ -6,11 +6,11 @@
     right: 0;
     background-color: variaveis.$corDeFundo;
     transition: background-color .5s ease;
-    z-index: 1;
-
+    
     &--is-hidden {
         background-color: transparent;
         transition: background-color .5s ease;
+        height: 0px;
 
         .header {
             &__logo, &__links__item:first-child {
@@ -25,6 +25,7 @@
         padding: 8px 36px;
         display: flex;
         justify-content: space-between;
+        height: 0px;
 
         @media (max-width: 768px) {
             padding: 0 12px 0 20px;
@@ -32,13 +33,14 @@
     }
 
     &__logo {
-        max-width: 80px;
+        max-width: 280px;
         width: 100%;
         margin: 5px;
         transition: opacity .5s ease;
+        background-color: transparent;
 
         @media (max-width: 768px) {
-            max-width: 64px;
+            max-width: 120px;
         }
     }
 
